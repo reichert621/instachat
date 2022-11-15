@@ -260,7 +260,7 @@ const InstaChat = () => {
           onSuccess={console.log}
         />
 
-        <div className="absolute top-0 right-0 left-0 bottom-40 w-full overflow-scroll py-8 px-4 text-gray-100">
+        <div className="absolute top-0 right-0 left-0 bottom-36 w-full overflow-scroll py-8 px-4 text-gray-100">
           {messages
             .sort((a: Message, b: Message) => a.timestamp - b.timestamp)
             .map((message: Message, index: number, list: Array<Message>) => {
