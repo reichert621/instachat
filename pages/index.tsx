@@ -157,7 +157,8 @@ const InstaChat = () => {
   const router = useRouter();
   const channelName = (router.query.c ||
     router.query.cid ||
-    router.query.channel) as string;
+    router.query.channel ||
+    'general') as string;
   const [text, setMessageText] = React.useState('');
   const scrollToRef = React.useRef<HTMLDivElement | null>(null);
   const textInputRef = React.useRef<HTMLTextAreaElement | null>(null);
